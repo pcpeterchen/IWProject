@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 0,
 			"revision" : 6,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -38,6 +38,46 @@
 		"subpatcher_template" : "",
 		"globalpatchername" : "the_toppatch",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1124.0, 371.0, 95.0, 22.0 ],
+					"style" : "",
+					"text" : "mxj DataCollect"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1169.0, 260.0, 73.0, 22.0 ],
+					"style" : "",
+					"text" : "viewsource"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-51",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1204.0, 454.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -262,7 +302,7 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 6,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -438,7 +478,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1003.5, 444.0, 119.0, 77.0 ],
 					"style" : "",
-					"text" : "open 0.5",
+					"text" : "closed 0.5",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -465,7 +505,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 869.5, 444.0, 104.0, 77.0 ],
 					"style" : "",
-					"text" : "closed 1.",
+					"text" : "open 0.5",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -591,7 +631,7 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 6,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -636,7 +676,7 @@
 											"major" : 7,
 											"minor" : 0,
 											"revision" : 6,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -737,7 +777,7 @@
 											"major" : 7,
 											"minor" : 0,
 											"revision" : 6,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -783,7 +823,7 @@
 															"major" : 7,
 															"minor" : 0,
 															"revision" : 6,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -1026,7 +1066,7 @@
 															"major" : 7,
 															"minor" : 0,
 															"revision" : 6,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -1922,7 +1962,7 @@
 											"major" : 7,
 											"minor" : 0,
 											"revision" : 6,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2096,7 +2136,7 @@
 											"major" : 7,
 											"minor" : 0,
 											"revision" : 6,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2332,7 +2372,7 @@
 											"major" : 7,
 											"minor" : 0,
 											"revision" : 6,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2596,7 +2636,7 @@
 											"major" : 7,
 											"minor" : 0,
 											"revision" : 6,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -2729,7 +2769,7 @@
 											"major" : 7,
 											"minor" : 0,
 											"revision" : 6,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -3517,7 +3557,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 447.100006, 261.0, 268.5, 261.0 ],
+									"midpoints" : [ 447.100016, 261.0, 268.5, 261.0 ],
 									"source" : [ "obj-48", 4 ]
 								}
 
@@ -3667,7 +3707,7 @@
 									"destination" : [ "obj-17", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 629.099976, 324.0, 905.5, 324.0 ],
+									"midpoints" : [ 629.1, 324.0, 905.5, 324.0 ],
 									"source" : [ "obj-83", 2 ]
 								}
 
@@ -3761,7 +3801,7 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 6,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4660,6 +4700,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4696,6 +4745,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4718,6 +4776,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-61", 0 ]
 				}
 
 			}
@@ -4810,12 +4877,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "dp.kinect2.mxe",
-				"type" : "iLaF"
+				"name" : "dp.kinect2.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "jit.pass.mxe",
-				"type" : "iLaF"
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "mxj.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"embedsnapshot" : 0
