@@ -50,19 +50,16 @@ public class DataCollect extends MaxObject {
 		else 
 		r_foot = a;
 
-	if (l_foot != null && r_foot != null) {
-		outlet(1, l_foot[1].toFloat() + r_foot[1].toFloat());
-	}
-
-	/*foot_dist = Math.sqrt(Math.pow((r_foot[0].toFloat() - l_foot[0].toFloat()),2) + 
+	foot_dist = Math.sqrt(Math.pow((r_foot[0].toFloat() - l_foot[0].toFloat()),2) + 
 			Math.pow((r_foot[1].toFloat() - l_foot[1].toFloat()),2) + 
-			Math.pow((r_foot[2].toFloat() - l_foot[2].toFloat()),2));*/
+			Math.pow((r_foot[2].toFloat() - l_foot[2].toFloat()),2));
 	hand_dist = Math.sqrt(Math.pow((r_hand[0].toFloat() - l_hand[0].toFloat()),2) + 
 		Math.pow((r_hand[1].toFloat() - l_hand[1].toFloat()),2) + 
 		Math.pow((r_hand[2].toFloat() - l_hand[2].toFloat()),2));
 
-/*post("hand_distance" + String.valueOf(distance));*/
+	post("foot_distance" + String.valueOf(foot_dist));
 	outlet(0, hand_dist);
+	outlet(1, foot_dist);
 	}
 }
 		/*try(PrintWriter out = new PrintWriter(new BufferedWriter

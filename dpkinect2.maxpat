@@ -39,12 +39,12 @@
 		"globalpatchername" : "the_toppatch",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-165",
+					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1213.0, 780.0, 95.0, 22.0 ],
+					"patching_rect" : [ 1224.0, 786.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "mxj DataCollect"
 				}
@@ -5088,7 +5088,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-165", 2 ],
+					"destination" : [ "obj-18", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-112", 0 ]
@@ -5178,7 +5178,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-165", 3 ],
+					"destination" : [ "obj-18", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-120", 0 ]
@@ -5304,10 +5304,19 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-145", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-165", 1 ]
+					"source" : [ "obj-18", 1 ]
 				}
 
 			}
@@ -5316,16 +5325,7 @@
 					"destination" : [ "obj-48", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-165", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-17", 0 ]
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -5583,7 +5583,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-165", 1 ],
+					"destination" : [ "obj-18", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-51", 0 ]
@@ -5592,7 +5592,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-165", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-52", 0 ]
