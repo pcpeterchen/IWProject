@@ -19,7 +19,7 @@ public class DataCollect extends MaxObject {
 
 	public DataCollect() {
 		datasetY = new DefaultCategoryDataset();
-		declareInlets(new int[]{DataTypes.FLOAT, DataTypes.FLOAT, DataTypes.LIST, DataTypes.LIST});
+		declareInlets(new int[]{DataTypes.LIST, DataTypes.LIST});
 		l1 = new Atom[3];
 		l2 = new Atom[3];
 	}
@@ -82,17 +82,19 @@ public class DataCollect extends MaxObject {
 	}
 	
 	public void list(Atom[] a) {
-		post("got here");
+/*		post("got here");*/
 		if (getInlet() == 0) {
 			l1 = a;
-/*			post("got here 1");
-			post("hello l1 " + " " + Atom.toOneString(l1) + "!"); 
-*/		}
+/*			post("got here 1");*/
+/*			post("hello l1 " + " " + Atom.toOneString(l1) + "!"); */
+		}
 		else 
 			l2 = a;
-/*			post("got here 2");
-			post("hello l2 " + " " + Atom.toOneString(l2) + "!");*/	
-		double distance = Math.sqrt(Math.pow((l1[0].toFloat() - l2[0].toFloat()),2) + Math.pow((l1[1].toFloat() - l2[1].toFloat()),2) + Math.pow((l1[2].toFloat() - l2[2].toFloat()),2));
+	/*		post("got here 2");*/
+		/*	post("hello l2 " + " " + Atom.toOneString(l2) + "!");	*/
+		distance = Math.sqrt(Math.pow((l1[0].toFloat() - l2[0].toFloat()),2) + 
+			Math.pow((l1[1].toFloat() - l2[1].toFloat()),2) + 
+			Math.pow((l1[2].toFloat() - l2[2].toFloat()),2));
 		post(String.valueOf(distance));
 		outlet(0, distance);
 	}
