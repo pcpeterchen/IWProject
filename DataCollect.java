@@ -92,7 +92,7 @@ public class DataCollect extends MaxObject {
 			l2 = a;
 /*			post("got here 2");
 			post("hello l2 " + " " + Atom.toOneString(l2) + "!");*/	
-		double distance = Math.sqrt(Math.pow((a[0].toFloat() - b[0].toFloat()),2) + Math.pow((a[1].toFloat() - b[1].toFloat()),2) + Math.pow((a[2].toFloat() - b[2].toFloat()),2));
+		double distance = Math.sqrt(Math.pow((l1[0].toFloat() - l2[0].toFloat()),2) + Math.pow((l1[1].toFloat() - l2[1].toFloat()),2) + Math.pow((l1[2].toFloat() - l2[2].toFloat()),2));
 		post(String.valueOf(distance));
 		outlet(0, distance);
 	}
