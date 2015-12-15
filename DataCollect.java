@@ -32,6 +32,13 @@ public class DataCollect extends MaxObject {
   return sum;
 	}
 
+	private double scale (Double a, Double b, Double min, Double max, Double x) {
+/*		     (b-a)(x - min)
+f(x) = --------------  + a
+          max - min*/
+          return (b - a) * (x - min)/(max - min) + a;
+	}
+
 	public DataCollect() {
 		declareInlets(new int[]{DataTypes.LIST, DataTypes.LIST, 
 			DataTypes.LIST, DataTypes.LIST, DataTypes.LIST, 
@@ -59,6 +66,7 @@ public class DataCollect extends MaxObject {
 		catch (IOException e) {
 			e.printStackTrace();
 		}
+		cenbuffer.delete(0, cenbuffer.length());
 
 		try(PrintWriter out = new PrintWriter(new BufferedWriter
 			(new FileWriter("C:\\Users\\pcpet_000\\Documents\\GitHub\\IWProject\\TestText.txt", true)))){
@@ -67,6 +75,7 @@ public class DataCollect extends MaxObject {
 		catch (IOException e) {
 			e.printStackTrace();
 		}
+		ybuffer.delete(0, ybuffer.length());
 	}
 
 /*	public void inlet (float f) {
@@ -114,6 +123,9 @@ public class DataCollect extends MaxObject {
 			17.555 * l_foot[1].toDouble() + 54.15 * torso[1].toDouble() + 
 			12.65 * waist[1].toDouble() + 14.81 * hip[1].toDouble()) / 
 		(5.335 + 2 * 17.555 + 54.15 + 2 * 12.65 + 14.81);
+
+		ceny = scale(-0.5, 0.5, -0.9, 0.9, ceny);
+
 		cenz = (5.335 * r_hand[2].toDouble() + 
 			5.335 * l_hand[2].toDouble() + 17.555 * r_foot[2].toDouble() + 
 			17.555 * l_foot[2].toDouble() + 54.15 * torso[2].toDouble() + 
