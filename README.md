@@ -1,4 +1,1 @@
-# IWProject
-Kinect stuff
-Creating stuff with Max MSP.
-Work in progress by Peter.
+This project describes the design, implementation, and results of an Xbox Kinect application that allows augmentation of breakdancing using the Xbox Kinect V2 Sensor.  There is a need for breakdancing applications using sensors, and the Kinect Sensor allows for dancing augmentation without the use of hand-held devices.  Our system uses the Kinect and uses Max MSP, audio manipulation software, to calculate speed of 20 joints and maps sets of joint speeds and joint heights to modes of breakdancing.  The system was tested qualitatively with three test subjects, and quantitatively and achieves consistency in calculating speed while the user is facing the camera in standing and crouching positions.  
